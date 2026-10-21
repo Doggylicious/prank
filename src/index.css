@@ -1,0 +1,138 @@
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #101114;
+  color: #f4f4f5;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+.app {
+  width: min(100% - 32px, 480px);
+  margin: 0 auto;
+  padding: 56px 0 28px;
+}
+
+.header {
+  margin-bottom: 36px;
+}
+
+.eyebrow {
+  color: #a1a1aa;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: clamp(42px, 12vw, 64px);
+  letter-spacing: -0.06em;
+}
+
+.subtitle {
+  color: #a1a1aa;
+  margin: 0;
+}
+
+.panel {
+  padding: 24px;
+  margin-bottom: 16px;
+  background: #1b1c21;
+  border: 1px solid #303138;
+  border-radius: 20px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 24px;
+  color: #d4d4d8;
+  font-size: 14px;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #71717a;
+}
+
+.status-dot.active {
+  background: #ef4444;
+}
+
+.record-button {
+  width: 100%;
+  min-height: 64px;
+  padding: 16px;
+  border: 0;
+  border-radius: 14px;
+  background: #f4f4f5;
+  color: #18181b;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.record-button.recording {
+  background: #dc2626;
+  color: white;
+}
+
+.record-button:active,
+.secondary-button:active {
+  transform: scale(0.98);
+}
+
+.hint {
+  margin: 16px 0 0;
+  color: #a1a1aa;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.error {
+  color: #fca5a5;
+  font-size: 14px;
+}
+
+.playback h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+audio {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.secondary-button {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #414149;
+  border-radius: 12px;
+  background: transparent;
+  color: #f4f4f5;
+  cursor: pointer;
+}
+
+footer {
+  padding: 20px 8px;
+  color: #71717a;
+  font-size: 12px;
+  text-align: center;
+}
